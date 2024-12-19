@@ -1,0 +1,4 @@
+CREATE TABLE Genres (
+    genre_id INT PRIMARY KEY AUTO_INCREMENT,
+    genre_name VARCHAR(255) NOT NULL
+)
