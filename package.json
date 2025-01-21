@@ -14,8 +14,10 @@
     "url": "MovieApi"
   },
   "dependencies": {
+    "expres": "^0.0.5",
     "express": "^4.21.2",
     "key": "file:",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1"
   }
 }
