@@ -15,9 +15,10 @@ const client = new Client({
     port: 5432,
 });
 
-app.listen(3001, () => {
+const PORT = 3000;
+app.listen(PORT, () => {
     console.log('Serveri pyörii')
-});
+})
 app.get('/', (req,res) => {
     res.send('This is endpoint!')
 });
