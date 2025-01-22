@@ -1,8 +1,9 @@
 import express from 'express' ;
+import pg from 'pg'
 
 
 var app = express();
-
+app.use(express.json())
 
 
 
@@ -12,6 +13,8 @@ app.listen(PORT, () => {
 })
 
 app.get('/movies', (req,res) => {
+    res.send('Here is movies')
+    console.log('Toimii')
     try{
         const result = ('Select * FROM Movies')
         res.json(result.rows)
@@ -22,7 +25,5 @@ app.get('/movies', (req,res) => {
         
     }
     
-    res.send('Here is movies')
-    console.log('Toimii')
 })
 

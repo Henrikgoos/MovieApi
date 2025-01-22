@@ -1,0 +1,1 @@
+pg_server.js on serveri mikä toimii, ja server.js on testi js
