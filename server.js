@@ -20,8 +20,7 @@ app.get('/movies', (req,res) => {
         res.json(result.rows)
     }
     catch(console){
-        console.error('Error fetching movies',error);
-        res.status(500).send('Error fetching movies')
+        console.error('Ei toimi',error);
         
     }
     

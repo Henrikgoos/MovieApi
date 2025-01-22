@@ -6,10 +6,9 @@ dotenv.config();
 var app = express();
 app.use(express.json());
 
-
 const {Client} = pg;
-
 const client = new Client();
+
 Connect();
 
 async function Connect(){
@@ -25,7 +24,7 @@ app.get('/movies', async (req,res) => {
     try{
         const result = await client.query('SELECT * FROM movie')
         res.json(result.rows)
-        console.log('Hyvä')
+        console.log('There you go')
     } catch(error) {
         console.log(error.message);
     }
